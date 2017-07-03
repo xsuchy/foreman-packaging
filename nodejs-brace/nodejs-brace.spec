@@ -4,7 +4,7 @@
 
 Name: nodejs-%{npm_name}
 Version: 0.10.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: browserify compatible version of the ace editor
 License: MIT
 URL: https://github.com/thlorenz/brace
@@ -53,6 +53,9 @@ cp -pf LICENSE README.md ../../
 %doc README.md
 
 %changelog
+* Mon Jul 03 2017 Miroslav Suchý <msuchy@redhat.com> 0.10.0-2
+- correctly provides bundled() (msuchy@redhat.com)
+
 * Fri Mar 24 2017 Dominic Cleal <dominic@cleal.org> 0.10.0-1
 - new package built with tito
 
